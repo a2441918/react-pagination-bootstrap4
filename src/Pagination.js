@@ -103,7 +103,7 @@ class Pagination extends Component {
             <ul className="pagination justify-content-center">
                 <li className={pager.currentPage === 1 ? 'page-item disabled' : 'page-item'}>
                     <button type={'button'} onClick={() => this.setPage(1)}><span
-                        className="page-link">&#9664;&#9664;</span></button>
+                        className="page-link">|&#9664;</span></button>
                 </li>
                 <li className={pager.currentPage === 1 ? 'page-item disabled' : ''}>
                     <button type={'button'} onClick={() => this.setPage(pager.currentPage - 1)}><span
@@ -124,7 +124,7 @@ class Pagination extends Component {
                 </li>
                 <li className={pager.currentPage === pager.totalPages ? 'page-item disabled' : 'page-item'}>
                     <button type="button" onClick={() => this.setPage(pager.totalPages)}><span
-                        className="page-link">&#9654;&#9654;</span></button>
+                        className="page-link">&#9654;|</span></button>
                 </li>
             </ul>
         );
